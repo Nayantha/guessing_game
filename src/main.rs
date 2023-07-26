@@ -4,6 +4,7 @@ use std::cmp::Ordering;
 use std::io;
 fn main() {
     println!("Guess the number!");
+    let mut guess_attempts: u32 = 3;
     let secret_number = rand::thread_rng().gen_range(1..101);
     // println!("The secret number is: {}", secret_number);
     loop {
@@ -28,5 +29,9 @@ fn main() {
                 break;
             }
         }
+        if guess_attempts == 0 {
+            break;
+        }
+        guess_attempts -= 1
     }
 }
