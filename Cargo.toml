@@ -7,3 +7,4 @@ authors = ["Nayantha Yasiru nayanthayasiru@gmail.com | koraleg-se19014@stu.kln.a
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = "0.8.5"
