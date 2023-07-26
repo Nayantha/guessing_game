@@ -30,6 +30,7 @@ fn main() {
             }
         }
         if guess_attempts == 0 {
+            println!("Sorry you ran out of attempts!");
             break;
         }
         guess_attempts -= 1
